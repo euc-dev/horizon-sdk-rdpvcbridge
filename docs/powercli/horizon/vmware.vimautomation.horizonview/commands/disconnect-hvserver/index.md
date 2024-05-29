@@ -2,6 +2,9 @@
 layout: page
 title: Disconnect-HVServer
 permalink: /powercli/horizon/vmware.vimautomation.horizonview/disconnect-hvserver/
+hide:
+  - navigation
+  #- toc
 ---
 
 This cmdlet disconnects the connection to a Horizon API service that runs on an instance of the Horizon Connection server specified by the `-Server` parameter. When there are no active connections to the server, the server is disconnected and removed from the `$DefaultHVServers` variable. For more information about this variable, see [Connect-HVServer](../connect-hvserver/index.md).
@@ -28,7 +31,7 @@ If `-Force` is specified, the server is disconnected even if there is more than 
 
 ## Output
 
-[VMware.VimAutomation.HorizonView.Types.V1.ViewServer](../../../../apis/horizon-server/index.md#API-Reference)
+[VMware.VimAutomation.HorizonView.Types.V1.ViewServer](../../../../../apis/horizon-server/index.md#API-Reference)
 
 ## Examples
 ### Example 1

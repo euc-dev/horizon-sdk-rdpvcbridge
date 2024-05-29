@@ -2,6 +2,9 @@
 layout: page
 title: Connect-HVServer
 permalink: /powercli/horizon/vmware.vimautomation.horizonview/connect-hvserver/
+hide:
+  - navigation
+  #- toc
 ---
 
 This cmdlet establishes a connection to the Horizon API service of the Horizon Connection server specified by the -Server parameter. The connect and disconnect operations for a server use a reference counting mechanism. Every server is identified by its connection string which contains a unique server and user name. If there is already an existing connection to the server, a new connection is not established. Instead, the cmdlet returns the object which represents the existing connection. The RefCount property of the object is incremented by one. When a server is disconnected, then its RefCount property is decreased by one. If this number becomes equal to zero, then the server is disconnected.
@@ -54,7 +57,7 @@ tabbed
 
 ## Output
 
-[VMware.VimAutomation.HorizonView.Types.V1.ViewServer](../../../../apis/horizon-server/index.md#API-Reference)
+[VMware.VimAutomation.HorizonView.Types.V1.ViewServer](../../../../../apis/horizon-server/index.md#API-Reference)
 
 ## Examples
 ### Example 1
@@ -80,8 +83,5 @@ Connects to the Horizon API service that runs on an instance of a Horizon Connec
 
 ## Related Commands
 ### HVServer
-[Connect-HVServer](../connect-hvserver/index.md)  
-This cmdlet establishes a connection to the Horizon API service that runs on an instance of the Horizon Connection server.
-
 [Disconnect-HVServer](../disconnect-hvserver/index.md)  
 This cmdlet closes the connection to one or more Horizon API services that run on one or more instances of Horizon Connection servers.
