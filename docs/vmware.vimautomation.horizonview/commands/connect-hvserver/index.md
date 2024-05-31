@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Connect-HVServer
-permalink: /powercli/horizon/vmware.vimautomation.horizonview/connect-hvserver/
+#permalink: /powercli/horizon/vmware.vimautomation.horizonview/connect-hvserver/
 hide:
   #- navigation
   - toc
@@ -57,7 +57,7 @@ tabbed
 
 ## Output
 
-[VMware.VimAutomation.HorizonView.Types.V1.ViewServer](../../../../../apis/horizon-server/index.md#API-Reference)
+[VMware.VimAutomation.HorizonView.Types.V1.ViewServer](/horizon-apis/horizon-server/index.md#API-Reference)
 
 ## Examples
 ### Example 1

@@ -1,6 +1,6 @@
 # Project Information
 site_name: omnissa Developer Portal
-site_url: https://euc-dev.github.io/powercli/horizon
+site_url: https://euc-dev.github.io/horizon-powercli
 site_author: Phil Helmling
 site_description: POC for developer.omnissa.com
 docs_dir: docs
@@ -148,18 +148,21 @@ markdown_extensions:
 # Navigation
 nav:
   - Home:
-    - /
+    - index.md
   - Dev Centre:
-    - /dev-centre/
-  - Product Docs:
-    - /docs/
+    - dev-centre/index.md
+#  - Product Docs:
+#    - product-docs/index.md
   - APIs:
-    - /apis/
+    - apis/index.md
   - Code Samples: 
-    - /samples/
+    - samples/index.md
   - PowerCLI:
-    - /powercli/
+    - powercli/index.md
   - SDKs: 
-    - /sdks/
+    - /sdks/index.md
   - Support:
-    - /support/
+    - support/index.md
+  - About:
+    - about.md
+    
