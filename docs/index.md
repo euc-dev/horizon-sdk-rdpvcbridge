@@ -9,7 +9,7 @@ hide:
 The [VMware.VimAutomation.HorizonView](https://www.powershellgallery.com/packages/VMware.VimAutomation.HorizonView/) powershell module provides Connect/Disconnect cmdlets for View API service.
 
 ## Installation
-Installation instructions can be found within the module listing in the Powershell Gallery at [](https://www.powershellgallery.com/packages/VMware.VimAutomation.HorizonView).
+Installation instructions can be found within the module listing in the [Powershell Gallery](https://www.powershellgallery.com/packages/VMware.VimAutomation.HorizonView).
 
 ## Getting Started with VMware Horizon cmdlets
 Cmdlets are usually implemented around resource operations. The four basic operations are CREATE, READ, UPDATE and DELETE. This set of operations is known as CRUD. Most of the cmdlets support CRUD which are respectively cmdlets that start with the New/Get/Set/Remove cmdlet verbs but they also may have additional operations.
