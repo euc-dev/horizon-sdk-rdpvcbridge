@@ -13,39 +13,41 @@ PowerCLI supports a list of default servers on which the Horizon API service run
 
 The target servers are kept in a global variable called `$DefaultHVServers`. The variable is of an array type and its initial value is an empty array. When you connect to a server, the server is added at the beginning of the array, unless `-NotDefault` parameter is specified. When you disconnect from a server, the server is removed from the `$DefaultHVServers` variable. When all servers are removed from the variable, its value is an empty array.
 
+## Syntax
 
-# Syntax
-
-tabbed
 === "Credential"
-  ```
-   Connect-HVServer     [-Server]  <String> 
+
+    ```Powershell
+    Connect-HVServer    [-Server]  <String> 
                         -Credential  <PSCredential> 
                         [-Domain  <String>] 
                         [-Force] 
                         [-NotDefault] 
                         [CommonParameters] 
-  ```
+    ```
   
 === "Default"
-  ```
-   Connect-HVServer     [-Server]  <String>
+
+    ```Powershell
+    Connect-HVServer    [-Server]  <String>
                         [-Domain  <String>]
                         [-Force]
                         [-NotDefault]
                         [-Password  <SecureString>]
                         [-User  <String>]
                         [CommonParameters]
-  ```
+    ```
 
 === "SessionSecret"
-  ```
-   Connect-HVServer     [-Server]  <String>
+
+    ```Powershell
+    Connect-HVServer    [-Server]  <String>
                         -SessionId  <String>
                         [-Force]
                         [-NotDefault]
                         [CommonParameters]
-  ```
+    ```
+
 ## Parameters
 
 | Required | Parameter Name | Type | Position | Features | Description |
@@ -60,13 +62,18 @@ tabbed
 [VMware.VimAutomation.HorizonView.Types.V1.ViewServer](../../../../horizon-apis/horizon-server/index.md#API-Reference)
 
 ## Examples
+
 ### Example 1
-`Connect-HVServer -Server server -User username -Password pass -Domain domain`  
+
+```Powershell
+Connect-HVServer -Server server -User username -Password pass -Domain domain
+```
+
 Connects to the Horizon API service that runs on an instance of a Horizon Connection server by using the User, Password, and Domain parameters.
 
 ### Example 2
 
-```
+```Powershell
 $cs = Connect-HVServer -Server server -Username user -Password pass -Domain domain;
 Connect-HVServer -Server server -SessionId $cs.SessionSecret
 ```
@@ -74,14 +81,24 @@ Connect-HVServer -Server server -SessionId $cs.SessionSecret
 Connects to the Horizon API service that runs on an instance of a Horizon Connection server with an existing session and returns the Horizon API service object. Username is alias to parameter user.
 
 ### Example 3
-`Connect-HVServer -Server server -User username@domain -Password pass`  
+
+```Powershell
+Connect-HVServer -Server server -User username@domain -Password pass
+```
+
 Connects to the Horizon API service of a Horizon Connection server by passing the domain as a part of the user name and returns the Horizon API service object.
 
 ### Example 4
-`Connect-HVServer -Server server`  
+
+```Powershell
+Connect-HVServer -Server server
+```
+
 Connects to the Horizon API service that runs on an instance of a Horizon Connection server. The user, domain, and password parameters are prompted for and read by the PowerCLI user interface. Returns the Horizon API service object.
 
 ## Related Commands
+
 ### HVServer
-[Disconnect-HVServer](../disconnect-hvserver/index.md)  
+
+[Disconnect-HVServer](../disconnect-hvserver/index.md)
 This cmdlet closes the connection to one or more Horizon API services that run on one or more instances of Horizon Connection servers.

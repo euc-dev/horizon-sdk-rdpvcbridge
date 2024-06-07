@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Disconnect-HVServer
-#permalink: /powercli/horizon/vmware.vimautomation.horizonview/disconnect-hvserver/
 hide:
   #- navigation
   - toc
