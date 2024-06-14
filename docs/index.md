@@ -18,5 +18,5 @@ Cmdlets are usually implemented around resource operations. The four basic opera
 
 **VMware.VimAutomation.HorizonView** module provides two commandlets:
 
-1. [`Connect-HVServer`](vmware.vimautomation.horizonview/commands/connect-hvserver/index.md)	This cmdlet establishes a connection to the Horizon API service that runs on an instance of the Horizon Connection server.
-2. [`Disconnect-HVServer`](vmware.vimautomation.horizonview/commands/disconnect-hvserver/index.md)	This cmdlet closes the connection to one or more Horizon API services that run on one or more instances of Horizon Connection servers.
+1. [`Connect-HVServer`](connect-hvserver/index.md) This cmdlet establishes a connection to the Horizon API service that runs on an instance of the Horizon Connection server.
+2. [`Disconnect-HVServer`](disconnect-hvserver/index.md) This cmdlet closes the connection to one or more Horizon API services that run on one or more instances of Horizon Connection servers.
