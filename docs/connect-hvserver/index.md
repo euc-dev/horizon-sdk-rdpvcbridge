@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Connect-HVServer
-#permalink: /powercli/horizon/vmware.vimautomation.horizonview/connect-hvserver/
 hide:
   #- navigation
   - toc
