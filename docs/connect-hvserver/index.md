@@ -7,7 +7,7 @@ hide:
   - toc
 ---
 
-This cmdlet establishes a connection to the Horizon API service of the Horizon Connection server specified by the -Server parameter. The connect and disconnect operations for a server use a reference counting mechanism. Every server is identified by its connection string which contains a unique server and user name. If there is already an existing connection to the server, a new connection is not established. Instead, the cmdlet returns the object which represents the existing connection. The RefCount property of the object is incremented by one. When a server is disconnected, then its RefCount property is decreased by one. If this number becomes equal to zero, then the server is disconnected.
+This cmdlet establishes a connection to the Horizon API service of the Horizon Connection server specified by the `-Server` parameter. The connect and disconnect operations for a server use a reference counting mechanism. Every server is identified by its connection string which contains a unique server and user name. If there is already an existing connection to the server, a new connection is not established. Instead, the cmdlet returns the object which represents the existing connection. The RefCount property of the object is incremented by one. When a server is disconnected, then its RefCount property is decreased by one. If this number becomes equal to zero, then the server is disconnected.
 
 PowerCLI supports a list of default servers on which the Horizon API service runs. The Horizon API service runs on an instance of the Horizon Connection server. When an operation is performed, if the target servers cannot be determined from the specified parameters, the cmdlet runs against the servers in the default server list. 
 

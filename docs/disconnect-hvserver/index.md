@@ -12,10 +12,11 @@ When no server and no user parameter is specified, and if there is only one conn
 
 If `-Force` is specified, the server is disconnected even if there is more than one connection to it.
 
-# Syntax
+## Syntax
 
 === "Default"
-  ```
+
+  ```Powershell
     Disconnect-HVServer [-Force]
                         [-Server  <ViewServer[]>]
                         [CommonParameters]
@@ -33,15 +34,20 @@ If `-Force` is specified, the server is disconnected even if there is more than 
 [VMware.VimAutomation.HorizonView.Types.V1.ViewServer](../../../../../horizon-apis/horizon-server/index.md#API-Reference)
 
 ## Examples
+
 ### Example 1
+
 `$HVServer = Connect-HVServer -Server server; Disconnect-HVServer -server $HVServer`
 Disconnects the connection to the specified Horizon API service that runs on an instance of a Horizon Connection server.
 
 ### Example 2
+
 `$HVServer = Connect-HVServer -Server server; Disconnect-HVServer -Force *`
 Disconnects all connected Horizon API services that run on instances of Horizon Connection servers.
 
 ## Related Commands
+
 ### HVServer
+
 [Connect-HVServer](../connect-hvserver/index.md)  
 This cmdlet establishes a connection to the Horizon API service that runs on an instance of the Horizon Connection server.
