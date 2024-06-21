@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Horizon PowerCLI
-#permalink: /powercli/horizon/
 hide:
   #- navigation
   - toc
 ---
+
 The [VMware.VimAutomation.HorizonView](https://www.powershellgallery.com/packages/VMware.VimAutomation.HorizonView/) powershell module provides Connect/Disconnect cmdlets for View API service.
 
 ## Installation

@@ -151,22 +151,3 @@ markdown_extensions:
 
 # Navigation
 # nav:
-#   - Home:
-#     - index.md
-#   - Dev Centre:
-#     - dev-centre/index.md
-# #  - Product Docs:
-# #    - product-docs/index.md
-#   - APIs:
-#     - apis/index.md
-#   - Code Samples: 
-#     - samples/index.md
-#   - PowerCLI:
-#     - powercli/index.md
-#   - SDKs: 
-#     - /sdks/index.md
-#   - Support:
-#     - support/index.md
-#   - About:
-#     - about.md
-    
