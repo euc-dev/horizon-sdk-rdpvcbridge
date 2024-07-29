@@ -97,7 +97,7 @@ extra:
     provider: mike
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/euc-oss/horizon-powercli
+      link: https://github.com/euc-oss/ws1-sdk-uem-ios
     - icon: fontawesome/brands/x-twitter
       link: https://twitter.com/WorkspaceONE
     - icon: fontawesome/brands/youtube
@@ -124,7 +124,6 @@ markdown_extensions:
   - footnotes
   - md_in_html
   - neoteroi.spantable
-  - neoteroi.cards
   - pymdownx.critic
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -150,4 +149,7 @@ markdown_extensions:
       permalink: true
 
 # Navigation
-# nav:
+nav:
+  - index.md
+  - Connect-HVServer: connect-hvserver/index.md
+  - Disconnect-HVServer: disconnect-hvserver/index.md
