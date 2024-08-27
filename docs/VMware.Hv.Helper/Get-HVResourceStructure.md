@@ -30,21 +30,21 @@ Get-HVResourceStructure [[-HvServer] <Object>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+{ Fill in the Description }
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> { Add example code here }
 ```
 
-{{ Add example description here }}
+{ Add example description here }
 
 ## PARAMETERS
 
 ### -HvServer
-{{ Fill HvServer Description }}
+{ Fill HvServer Description }
 
 ```yaml
 Type: Object

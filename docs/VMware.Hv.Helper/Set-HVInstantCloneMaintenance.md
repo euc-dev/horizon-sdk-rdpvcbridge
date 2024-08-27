@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -HvServer
-{{ Fill HvServer Description }}
+{ Fill HvServer Description }
 
 ```yaml
 Type: Object

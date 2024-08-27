@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -globalEntitlement
-{{ Fill globalEntitlement Description }}
+{ Fill globalEntitlement Description }
 
 ```yaml
 Type: String
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourcePool
-{{ Fill ResourcePool Description }}
+{ Fill ResourcePool Description }
 
 ```yaml
 Type: String
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -clearGlobalEntitlement
-{{ Fill clearGlobalEntitlement Description }}
+{ Fill clearGlobalEntitlement Description }
 
 ```yaml
 Type: SwitchParameter
@@ -260,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -allowUsersToChooseProtocol
-{{ Fill allowUsersToChooseProtocol Description }}
+{ Fill allowUsersToChooseProtocol Description }
 
 ```yaml
 Type: Boolean
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### -enableHTMLAccess
-{{ Fill enableHTMLAccess Description }}
+{ Fill enableHTMLAccess Description }
 
 ```yaml
 Type: Boolean

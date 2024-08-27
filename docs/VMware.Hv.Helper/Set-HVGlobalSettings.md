@@ -310,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### -forcedLogoffTimeoutMinutes
-{{ Fill forcedLogoffTimeoutMinutes Description }}
+{ Fill forcedLogoffTimeoutMinutes Description }
 
 ```yaml
 Type: Int32

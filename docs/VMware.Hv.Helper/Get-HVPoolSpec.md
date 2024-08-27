@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -FilePath
-{{ Fill FilePath Description }}
+{ Fill FilePath Description }
 
 ```yaml
 Type: String

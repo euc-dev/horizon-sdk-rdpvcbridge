@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -JsonFilePath
-{{ Fill JsonFilePath Description }}
+{ Fill JsonFilePath Description }
 
 ```yaml
 Type: String

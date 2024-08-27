@@ -49,7 +49,7 @@ Accept wildcard characters: False
 ```
 
 ### -VcId
-{{ Fill VcId Description }}
+{ Fill VcId Description }
 
 ```yaml
 Type: VirtualCenterId
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -BaseImageVmId
-{{ Fill BaseImageVmId Description }}
+{ Fill BaseImageVmId Description }
 
 ```yaml
 Type: BaseImageVmId

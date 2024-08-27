@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -GlobalEntitlements
-{{ Fill GlobalEntitlements Description }}
+{ Fill GlobalEntitlements Description }
 
 ```yaml
 Type: Object
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -Enable
-{{ Fill Enable Description }}
+{ Fill Enable Description }
 
 ```yaml
 Type: SwitchParameter
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Disable
-{{ Fill Disable Description }}
+{ Fill Disable Description }
 
 ```yaml
 Type: SwitchParameter

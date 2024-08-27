@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -GlobalEntitlement
-{{ Fill GlobalEntitlement Description }}
+{ Fill GlobalEntitlement Description }
 
 ```yaml
 Type: Object
