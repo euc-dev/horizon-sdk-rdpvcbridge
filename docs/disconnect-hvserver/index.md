@@ -31,7 +31,7 @@ If `-Force` is specified, the server is disconnected even if there is more than 
 
 ## Output
 
-[VMware.VimAutomation.HorizonView.Types.V1.ViewServer](../../../../../horizon-apis/horizon-server/index.md#API-Reference)
+[Omnissa.VimAutomation.HorizonView.Types.V1.ViewServer](../../../../../horizon-apis/horizon-server/index.md#API-Reference)
 
 ## Examples
 

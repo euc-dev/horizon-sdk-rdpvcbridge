@@ -58,7 +58,7 @@ The target servers are kept in a global variable called `$DefaultHVServers`. The
 
 ## Output
 
-[VMware.VimAutomation.HorizonView.Types.V1.ViewServer](../../../../horizon-apis/horizon-server/index.md#API-Reference)
+[Omnissa.VimAutomation.HorizonView.Types.V1.ViewServer](../../../../horizon-apis/horizon-server/index.md#API-Reference)
 
 ## Examples
 

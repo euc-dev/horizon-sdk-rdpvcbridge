@@ -6,33 +6,33 @@ hide:
   - toc
 ---
 
-The [VMware.VimAutomation.HorizonView](https://www.powershellgallery.com/packages/VMware.VimAutomation.HorizonView/) powershell module provides Connect/Disconnect cmdlets for View API service.
+The Omnissa.VimAutomation.HorizonView powershell module provides Connect/Disconnect cmdlets for View API service.
 
-The [VMware.Hv.Helper](https://github.com/euc-oss/euc-samples/tree/Horizon-Samples/VMware.Hv.Helper) Powershell Module extends the capabilities provided by the `VMware.VimAutomation.HorizonView` module. It can Add, create New, Get, Set, Start and Remove Global, Farm and Pool settings.
+The [Omnissa.Hv.Helper](https://github.com/euc-oss/HorizonView-Example-Scripts/tree/master) Powershell Module extends the capabilities provided by the `Omnissa.VimAutomation.HorizonView` module. It can Add, create New, Get, Set, Start and Remove Global, Farm and Pool settings.
 
 ## Installation
 
 Installation instructions can be found within the module listing in the [Powershell Gallery](https://www.powershellgallery.com/).
 
-1. Import HorizonView module by running: `Import-Module VMware.VimAutomation.HorizonView.`
-2. Import "VMware.Hv.Helper" module by running: `Import-Module -Name VMware.Hv.Helper`. Alternatively run `Get-Module -ListAvailable 'VMware.Hv.Helper' | Import-Module`.
-3. Run `Get-Command -Module 'VMware.Hv.Helper'` to list all available functions.
+1. Import HorizonView module by running: `Import-Module Omnissa.VimAutomation.HorizonView.`
+2. Import "Omnissa.Hv.Helper" module by running: `Import-Module -Name Omnissa.Hv.Helper`. Alternatively run `Get-Module -ListAvailable 'Omnissa.Hv.Helper' | Import-Module`.
+3. Run `Get-Command -Module 'Omnissa.Hv.Helper'` to list all available functions.
 
 ## Prerequisites
 
 1. This module only works for Horizon product E.g. Horizon 7.0.2 and later.
 2. Install the latest version of Powershell, PowerCLI(6.5) or (later version via psgallery).
 
-## Getting Started with VMware Horizon cmdlets
+## Getting Started with Omnissa Horizon cmdlets
 
 Cmdlets are usually implemented around resource operations. The four basic operations are CREATE, READ, UPDATE and DELETE. This set of operations is known as CRUD. Most of the cmdlets support CRUD which are respectively cmdlets that start with the New/Get/Set/Remove cmdlet verbs but they also may have additional operations.
 
-**VMware.VimAutomation.HorizonView** module provides two commandlets:
+**Omnissa.VimAutomation.HorizonView** module provides two commandlets:
 
 1. [`Connect-HVServer`](connect-hvserver/index.md) This cmdlet establishes a connection to the Horizon API service that runs on an instance of the Horizon Connection server.
 2. [`Disconnect-HVServer`](disconnect-hvserver/index.md) This cmdlet closes the connection to one or more Horizon API services that run on one or more instances of Horizon Connection servers.
 
-**VMware.Hv.Helper Powershell Module** module provides many additional commandlets which are linked in the menu to the left.
+**Omnissa.Hv.Helper Powershell Module** module provides many additional commandlets which are linked in the menu to the left.
 <!-- 
 * [Add-HVDesktop.md](VMware.Hv.Helper/Add-HVDesktop.md)
 * [Add-HVRDSServer.md](VMware.Hv.Helper/Add-HVRDSServer.md)
@@ -108,7 +108,7 @@ Cmdlets are usually implemented around resource operations. The four basic opera
 ### Example script to connect ViewAPI service
 
 ```
-Import-Module VMware.VimAutomation.HorizonView
+Import-Module Omnissa.VimAutomation.HorizonView
 
 # Connection to view API service
 $hvServer = Connect-HVServer -server <connection server IP/FQDN>
