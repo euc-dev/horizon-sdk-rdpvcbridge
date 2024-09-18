@@ -1,6 +1,6 @@
 ---
-external help file: VMware.HV.Helper-help.xml
-Module Name: VMware.HV.Helper
+external help file: Omnissa.HV.Helper-help.xml
+Module Name: Omnissa.HV.Helper
 online version:
 schema: 2.0.0
 ---
@@ -31,7 +31,7 @@ This represents a simple association between a single user/group and a resource 
 
 ### EXAMPLE 1
 ```
-New-HVEntitlement  -User 'administrator@adviewdev.eng.vmware.com' -ResourceName 'InsClnPol' -Confirm:$false
+New-HVEntitlement  -User 'administrator@adviewdev.eng.omnissa.com' -ResourceName 'InsClnPol' -Confirm:$false
 ```
 
 Associate a user/group with a pool
@@ -45,14 +45,14 @@ Associate a user/group with a application
 
 ### EXAMPLE 3
 ```
-New-HVEntitlement  -User 'adviewdev.eng.vmware.com\administrator' -ResourceName 'UrlSetting1' -ResourceType URLRedirection
+New-HVEntitlement  -User 'adviewdev.eng.omnissa.com\administrator' -ResourceName 'UrlSetting1' -ResourceType URLRedirection
 ```
 
 Associate a user/group with a URLRedirection settings
 
 ### EXAMPLE 4
 ```
-New-HVEntitlement  -User 'adviewdev.eng.vmware.com\administrator' -ResourceName 'GE1' -ResourceType GlobalEntitlement
+New-HVEntitlement  -User 'adviewdev.eng.omnissa.com\administrator' -ResourceName 'GE1' -ResourceType GlobalEntitlement
 ```
 
 Associate a user/group with a desktop entitlement
@@ -208,7 +208,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 | | |
 |-|-|
 | Author | Praveen Mathamsetty. |
-| Author email | pmathamsetty@vmware.com |
+| Author email | pmathamsetty@omnissa.com |
 | Version | 1.1 |
 
 ===Tested Against Environment====

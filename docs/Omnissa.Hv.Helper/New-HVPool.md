@@ -1,6 +1,6 @@
 ---
-external help file: VMware.HV.Helper-help.xml
-Module Name: VMware.HV.Helper
+external help file: Omnissa.HV.Helper-help.xml
+Module Name: Omnissa.HV.Helper
 online version:
 schema: 2.0.0
 ---
@@ -130,51 +130,51 @@ determined based on input parameters.
 
 ### EXAMPLE 1
 ```
-New-HVPool -LinkedClone -PoolName 'vmwarepool' -UserAssignment FLOATING -ParentVM 'Agent_vmware' -SnapshotVM 'kb-hotfix' -VmFolder 'vmware' -HostOrCluster 'CS-1' -ResourcePool 'CS-1' -Datastores 'datastore1' -NamingMethod PATTERN -PoolDisplayName 'vmware linkedclone pool' -Description  'created linkedclone pool from ps' -EnableProvisioning $true -StopProvisioningOnError $false -NamingPattern  "vmware2" -MinReady 0 -MaximumCount 1 -SpareCount 1 -ProvisioningTime UP_FRONT -SysPrepName vmwarecust -CustType SYS_PREP -NetBiosName adviewdev -DomainAdmin root
+New-HVPool -LinkedClone -PoolName 'omnissapool' -UserAssignment FLOATING -ParentVM 'Agent_omnissa' -SnapshotVM 'kb-hotfix' -VmFolder 'omnissa' -HostOrCluster 'CS-1' -ResourcePool 'CS-1' -Datastores 'datastore1' -NamingMethod PATTERN -PoolDisplayName 'omnissa linkedclone pool' -Description  'created linkedclone pool from ps' -EnableProvisioning $true -StopProvisioningOnError $false -NamingPattern  "omnissa2" -MinReady 0 -MaximumCount 1 -SpareCount 1 -ProvisioningTime UP_FRONT -SysPrepName omnissacust -CustType SYS_PREP -NetBiosName adviewdev -DomainAdmin root
 ```
 
 Create new automated linked clone pool with naming method pattern
 
 ### EXAMPLE 2
 ```
-New-HVPool -Spec C:\VMWare\Specs\LinkedClone.json -Confirm:$false
+New-HVPool -Spec C:\Omnissa\Specs\LinkedClone.json -Confirm:$false
 ```
 
 Create new automated linked clone pool by using JSON spec file
 
 ### EXAMPLE 3
 ```
-Get-HVPool -PoolName 'vmwarepool' | New-HVPool -PoolName 'clonedPool' -NamingPattern 'clonelnk1';
+Get-HVPool -PoolName 'omnissapool' | New-HVPool -PoolName 'clonedPool' -NamingPattern 'clonelnk1';
 ```
 
 (OR)
-$vmwarepool = Get-HVPool -PoolName 'vmwarepool';  New-HVPool -ClonePool $vmwarepool -PoolName 'clonedPool' -NamingPattern 'clonelnk1';
+$omnissapool = Get-HVPool -PoolName 'omnissapool';  New-HVPool -ClonePool $omnissapool -PoolName 'clonedPool' -NamingPattern 'clonelnk1';
 Clones new pool by using existing pool configuration
 
 ### EXAMPLE 4
 ```
-New-HVPool -InstantClone -PoolName "InsPoolvmware" -PoolDisplayName "insPool" -Description "create instant pool" -UserAssignment FLOATING -ParentVM 'Agent_vmware' -SnapshotVM 'kb-hotfix' -VmFolder 'vmware' -HostOrCluster  'CS-1' -ResourcePool 'CS-1' -NamingMethod PATTERN -Datastores 'datastore1' -NamingPattern "inspool2" -NetBiosName 'adviewdev' -DomainAdmin root
+New-HVPool -InstantClone -PoolName "InsPoolomnissa" -PoolDisplayName "insPool" -Description "create instant pool" -UserAssignment FLOATING -ParentVM 'Agent_omnissa' -SnapshotVM 'kb-hotfix' -VmFolder 'omnissa' -HostOrCluster  'CS-1' -ResourcePool 'CS-1' -NamingMethod PATTERN -Datastores 'datastore1' -NamingPattern "inspool2" -NetBiosName 'adviewdev' -DomainAdmin root
 ```
 
 Create new automated instant clone pool with naming method pattern
 
 ### EXAMPLE 5
 ```
-New-HVPool -FullClone -PoolName "FullClone" -PoolDisplayName "FullClonePra" -Description "create full clone" -UserAssignment DEDICATED -Template 'powerCLI-VM-TEMPLATE' -VmFolder 'vmware' -HostOrCluster 'CS-1' -ResourcePool 'CS-1'  -Datastores 'datastore1' -NamingMethod PATTERN -NamingPattern 'FullCln1' -SysPrepName vmwarecust -CustType SYS_PREP -NetBiosName adviewdev -DomainAdmin root
+New-HVPool -FullClone -PoolName "FullClone" -PoolDisplayName "FullClonePra" -Description "create full clone" -UserAssignment DEDICATED -Template 'powerCLI-VM-TEMPLATE' -VmFolder 'omnissa' -HostOrCluster 'CS-1' -ResourcePool 'CS-1'  -Datastores 'datastore1' -NamingMethod PATTERN -NamingPattern 'FullCln1' -SysPrepName omnissacust -CustType SYS_PREP -NetBiosName adviewdev -DomainAdmin root
 ```
 
 Create new automated full clone pool with naming method pattern
 
 ### EXAMPLE 6
 ```
-New-HVPool -MANUAL -PoolName 'manualVMWare' -PoolDisplayName 'MNLPUL' -Description 'Manual pool creation' -UserAssignment FLOATING -Source VIRTUAL_CENTER -VM 'PowerCLIVM1', 'PowerCLIVM2'
+New-HVPool -MANUAL -PoolName 'manualOmnissa' -PoolDisplayName 'MNLPUL' -Description 'Manual pool creation' -UserAssignment FLOATING -Source VIRTUAL_CENTER -VM 'PowerCLIVM1', 'PowerCLIVM2'
 ```
 
 Create new managed manual pool from virtual center managed VirtualMachines.
 
 ### EXAMPLE 7
 ```
-New-HVPool -MANUAL -PoolName 'unmangedVMWare' -PoolDisplayName 'unMngPl' -Description 'unmanaged Manual Pool creation' -UserAssignment FLOATING -Source UNMANAGED -VM 'myphysicalmachine.vmware.com'
+New-HVPool -MANUAL -PoolName 'unmangedOmnissa' -PoolDisplayName 'unMngPl' -Description 'unmanaged Manual Pool creation' -UserAssignment FLOATING -Source UNMANAGED -VM 'myphysicalmachine.omnissa.com'
 ```
 
 Create new unmanaged manual pool from unmanaged VirtualMachines.
@@ -633,7 +633,7 @@ Accept wildcard characters: False
 ```
 
 ### -enableHTMLAccess
-HTML Access, enabled by VMware Blast technology, allows users to connect to View machines from Web browsers.
+HTML Access, enabled by Omnissa Blast technology, allows users to connect to View machines from Web browsers.
 
 ```yaml
 Type: Boolean
@@ -1817,7 +1817,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 | | |
 |-|-|
 | Author | Praveen Mathamsetty. |
-| Author email | pmathamsetty@vmware.com |
+| Author email | pmathamsetty@omnissa.com |
 | Version | 1.1 |
 
 ===Tested Against Environment====

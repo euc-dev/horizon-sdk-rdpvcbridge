@@ -1,6 +1,6 @@
 ---
-external help file: VMware.HV.Helper-help.xml
-Module Name: VMware.HV.Helper
+external help file: Omnissa.HV.Helper-help.xml
+Module Name: Omnissa.HV.Helper
 online version:
 schema: 2.0.0
 ---
@@ -134,7 +134,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 | | |
 |-|-|
 | Author | Praveen Mathamsetty. |
-| Author email | pmathamsetty@vmware.com |
+| Author email | pmathamsetty@omnissa.com |
 | Version | 1.1 |
 
 ===Tested Against Environment====

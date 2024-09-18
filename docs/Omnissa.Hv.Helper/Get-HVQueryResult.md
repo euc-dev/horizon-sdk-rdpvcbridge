@@ -1,6 +1,6 @@
 ---
-external help file: VMware.HV.Helper-help.xml
-Module Name: VMware.HV.Helper
+external help file: Omnissa.HV.Helper-help.xml
+Module Name: Omnissa.HV.Helper
 online version:
 schema: 2.0.0
 ---
@@ -33,21 +33,21 @@ Returns query results of entityType DesktopSummaryView(position 0)
 
 ### EXAMPLE 2
 ```
-Get-HVQueryResult DesktopSummaryView (Get-HVQueryFilter data.name -Eq vmware)
+Get-HVQueryResult DesktopSummaryView (Get-HVQueryFilter data.name -Eq omnissa)
 ```
 
 Returns query results of entityType DesktopSummaryView(position 0) with given filter(position 1)
 
 ### EXAMPLE 3
 ```
-Get-HVQueryResult -EntityType DesktopSummaryView -Filter (Get-HVQueryFilter desktopSummaryData.name -Eq vmware)
+Get-HVQueryResult -EntityType DesktopSummaryView -Filter (Get-HVQueryFilter desktopSummaryData.name -Eq omnissa)
 ```
 
 Returns query results of entityType DesktopSummaryView with given filter
 
 ### EXAMPLE 4
 ```
-$myFilter = Get-HVQueryFilter data.name -Contains vmware
+$myFilter = Get-HVQueryFilter data.name -Contains omnissa
 ```
 
 Get-HVQueryResult -EntityType DesktopSummaryView -Filter $myFilter -SortBy desktopSummaryData.displayName -SortDescending $false
@@ -168,7 +168,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 | | |
 |-|-|
 | Author | Kummara Ramamohan. |
-| Author email | kramamohan@vmware.com |
+| Author email | kramamohan@omnissa.com |
 | Version | 1.1 |
 
 ===Tested Against Environment====

@@ -1,6 +1,6 @@
 ---
-external help file: VMware.HV.Helper-help.xml
-Module Name: VMware.HV.Helper
+external help file: Omnissa.HV.Helper-help.xml
+Module Name: Omnissa.HV.Helper
 online version:
 schema: 2.0.0
 ---
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-HVQueryFilter
 
 ## SYNOPSIS
-Creates a VMware.Hv.QueryFilter based on input provided.
+Creates a Omnissa.Hv.QueryFilter based on input provided.
 
 ## SYNTAX
 
@@ -48,49 +48,49 @@ Get-HVQueryFilter [-Or] [-Filters] <QueryFilter[]> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-This is a factory method to create a VMware.Hv.QueryFilter.
+This is a factory method to create a Omnissa.Hv.QueryFilter.
 The type of the QueryFilter would be determined based on switch used.
 
 ## EXAMPLES
 
 ### EXAMPLE 1
 ```
-Get-HVQueryFilter data.name -Eq vmware
+Get-HVQueryFilter data.name -Eq Omnissa
 ```
 
 Creates queryFilterEquals with given parameters memberName(position 0) and memberValue(position 2)
 
 ### EXAMPLE 2
 ```
-Get-HVQueryFilter -MemberName data.name -Eq -MemberValue vmware
+Get-HVQueryFilter -MemberName data.name -Eq -MemberValue Omnissa
 ```
 
 Creates queryFilterEquals with given parameters memberName and memberValue
 
 ### EXAMPLE 3
 ```
-Get-HVQueryFilter data.name -Ne vmware
+Get-HVQueryFilter data.name -Ne Omnissa
 ```
 
 Creates queryFilterNotEquals filter with given parameters memberName and memberValue
 
 ### EXAMPLE 4
 ```
-Get-HVQueryFilter data.name -Contains vmware
+Get-HVQueryFilter data.name -Contains Omnissa
 ```
 
 Creates queryFilterContains with given parameters memberName and memberValue
 
 ### EXAMPLE 5
 ```
-Get-HVQueryFilter data.name -Startswith vmware
+Get-HVQueryFilter data.name -Startswith Omnissa
 ```
 
 Creates queryFilterStartsWith with given parameters memberName and memberValue
 
 ### EXAMPLE 6
 ```
-$filter = Get-HVQueryFilter data.name -Startswith vmware
+$filter = Get-HVQueryFilter data.name -Startswith Omnissa
 ```
 
 Get-HVQueryFilter -Not $filter
@@ -98,7 +98,7 @@ Creates queryFilterNot with given parameter filter
 
 ### EXAMPLE 7
 ```
-$filter1 = Get-HVQueryFilter data.name -Startswith vmware
+$filter1 = Get-HVQueryFilter data.name -Startswith Omnissa
 ```
 
 $filter2 = Get-HVQueryFilter data.name -Contains pool
@@ -108,7 +108,7 @@ Creates queryFilterAnd with given parameter filters array
 
 ### EXAMPLE 8
 ```
-$filter1 = Get-HVQueryFilter data.name -Startswith vmware
+$filter1 = Get-HVQueryFilter data.name -Startswith Omnissa
 ```
 
 $filter2 = Get-HVQueryFilter data.name -Contains pool
@@ -295,7 +295,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 | | |
 |-|-|
 | Author | Kummara Ramamohan. |
-| Author email | kramamohan@vmware.com |
+| Author email | kramamohan@omnissa.com |
 | Version | 1.1 |
 
 ===Tested Against Environment====

@@ -1,6 +1,6 @@
 ---
-external help file: VMware.HV.Helper-help.xml
-Module Name: VMware.HV.Helper
+external help file: Omnissa.HV.Helper-help.xml
+Module Name: Omnissa.HV.Helper
 online version:
 schema: 2.0.0
 ---
@@ -47,7 +47,7 @@ Add machines to automated specific named Floating pool
 
 ### EXAMPLE 4
 ```
-Add-HVDesktop -PoolName 'Unmanaged' -Machines 'desktop-1.eng.vmware.com'
+Add-HVDesktop -PoolName 'Unmanaged' -Machines 'desktop-1.eng.omnissa.com'
 ```
 
 Add machines to unmanged manual pool
@@ -173,7 +173,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 | | |
 |-|-|
 | Author | Praveen Mathamsetty |
-| Author email | pmathamsetty@vmware.com |
+| Author email | pmathamsetty@omnissa.com |
 | Version | 1.1 |
 | Dependencies | Make sure pool already exists before adding VMs to it. |
 

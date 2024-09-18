@@ -1,6 +1,6 @@
 ---
-external help file: VMware.HV.Helper-help.xml
-Module Name: VMware.HV.Helper
+external help file: Omnissa.HV.Helper-help.xml
+Module Name: Omnissa.HV.Helper
 online version:
 schema: 2.0.0
 ---
@@ -125,12 +125,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Returns array of object type VMware.Hv.BaseImageVmInfo
+### Returns array of object type Omnissa.Hv.BaseImageVmInfo
 ## NOTES
 | | |
 |-|-|
 | Author | Matt Frey. |
-| Author email | mfrey@vmware.com |
+| Author email | mfrey@omnissa.com |
 | Version | 1.0 |
 
 ===Tested Against Environment====

@@ -1,6 +1,6 @@
 ---
-external help file: VMware.HV.Helper-help.xml
-Module Name: VMware.HV.Helper
+external help file: Omnissa.HV.Helper-help.xml
+Module Name: Omnissa.HV.Helper
 online version:
 schema: 2.0.0
 ---
@@ -31,21 +31,21 @@ Gets all the entitlements related to application pool
 
 ### EXAMPLE 2
 ```
-Get-HVEntitlement -User 'adviewdev.eng.vmware.com\administrator' -ResourceName 'calculator' -ResourceType Application
+Get-HVEntitlement -User 'adviewdev.eng.omnissa.com\administrator' -ResourceName 'calculator' -ResourceType Application
 ```
 
 Gets entitlements specific to user or group name and application resource
 
 ### EXAMPLE 3
 ```
-Get-HVEntitlement -User 'adviewdev.eng.vmware.com\administrator' -ResourceName 'UrlSetting1' -ResourceType URLRedirection
+Get-HVEntitlement -User 'adviewdev.eng.omnissa.com\administrator' -ResourceName 'UrlSetting1' -ResourceType URLRedirection
 ```
 
 Gets entitlements specific to user or group and URLRedirection resource
 
 ### EXAMPLE 4
 ```
-Get-HVEntitlement -User 'administrator@adviewdev.eng.vmware.com' -ResourceName 'GE1' -ResourceType GlobalEntitlement
+Get-HVEntitlement -User 'administrator@adviewdev.eng.omnissa.com' -ResourceName 'GE1' -ResourceType GlobalEntitlement
 ```
 
 Gets entitlements specific to user or group and GlobalEntitlement resource
@@ -141,7 +141,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 | | |
 |-|-|
 | Author | Praveen Mathamsetty. |
-| Author email | pmathamsetty@vmware.com |
+| Author email | pmathamsetty@omnissa.com |
 | Version | 1.1 |
 
 ===Tested Against Environment====

@@ -1,6 +1,6 @@
 ---
-external help file: VMware.HV.Helper-help.xml
-Module Name: VMware.HV.Helper
+external help file: Omnissa.HV.Helper-help.xml
+Module Name: Omnissa.HV.Helper
 online version:
 schema: 2.0.0
 ---
@@ -98,28 +98,28 @@ Creates new linkedClone farm by using naming pattern
 
 ### EXAMPLE 3
 ```
-New-HVFarm -Spec C:\VMWare\Specs\LinkedClone.json -Confirm:$false
+New-HVFarm -Spec C:\Omnissa\Specs\LinkedClone.json -Confirm:$false
 ```
 
 Creates new linkedClone farm by using json file
 
 ### EXAMPLE 4
 ```
-New-HVFarm -Spec C:\VMWare\Specs\InstantCloneFarm.json -Confirm:$false
+New-HVFarm -Spec C:\Omnissa\Specs\InstantCloneFarm.json -Confirm:$false
 ```
 
 Creates new instantClone farm by using json file
 
 ### EXAMPLE 5
 ```
-New-HVFarm -Manual -FarmName "manualFarmTest" -FarmDisplayName "manualFarmTest" -Description "Manual PS Test" -RdsServers "vm-for-rds.eng.vmware.com","vm-for-rds-2.eng.vmware.com" -Confirm:$false
+New-HVFarm -Manual -FarmName "manualFarmTest" -FarmDisplayName "manualFarmTest" -Description "Manual PS Test" -RdsServers "vm-for-rds.eng.omnissa.com","vm-for-rds-2.eng.omnissa.com" -Confirm:$false
 ```
 
 Creates new manual farm by using rdsServers names
 
 ### EXAMPLE 6
 ```
-New-HVFarm -Spec C:\VMWare\Specs\AutomatedInstantCloneFarm.json -FarmName 'InsPool' -NamingPattern 'InsFarm-'
+New-HVFarm -Spec C:\Omnissa\Specs\AutomatedInstantCloneFarm.json -FarmName 'InsPool' -NamingPattern 'InsFarm-'
 ```
 
 Creates new instant clone farm by reading few parameters from json and few parameters from command line.
@@ -1120,7 +1120,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 | | |
 |-|-|
 | Author | praveen mathamsetty. |
-| Author email | pmathamsetty@vmware.com |
+| Author email | pmathamsetty@omnissa.com |
 | Version | 1.1 |
 
 ===Tested Against Environment====
