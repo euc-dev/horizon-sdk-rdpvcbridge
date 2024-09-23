@@ -11,7 +11,7 @@ By installing you agree to the [Omnissa general terms](https://www.omnissa.com/g
 
 | Horizon Server version                                                                                                         | Download Powercli module |
 |------------------------------------------------------------------------------------------------------------------------| --- |
-| 8.13/2406                    | [horizon4powercli_2406](zip/horizon4powercli_2406.zip) |
+| 8.13/2406                    | [horizon4powercli_2406](releases/tag/2406/Assets/horizon4powercli_2406.zip) |
 
 ### Supported Powershell versions
 1. Windows PowerShell 5.1

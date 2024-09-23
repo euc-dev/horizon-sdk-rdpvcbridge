@@ -8,20 +8,13 @@ hide:
 
 The Omnissa.VimAutomation.HorizonView powershell module provides Connect/Disconnect cmdlets for View API service.
 
-The [Omnissa.Hv.Helper](https://github.com/euc-oss/HorizonView-Example-Scripts/tree/master) Powershell Module extends the capabilities provided by the `Omnissa.VimAutomation.HorizonView` module. It can Add, create New, Get, Set, Start and Remove Global, Farm and Pool settings.
+The [Omnissa.Horizon.Helper](https://github.com/euc-oss/euc-samples/tree/main/Horizon-Samples/Omnissa.Horizon.Helper) Powershell Module extends the capabilities provided by the `Omnissa.VimAutomation.HorizonView` module. It can Add, create New, Get, Set, Start and Remove Global, Farm and Pool settings.
 
-## Installation
-
-Installation instructions can be found within the module listing in the [Powershell Gallery](https://www.powershellgallery.com/).
+## Using Horizon Powercli
 
 1. Import HorizonView module by running: `Import-Module Omnissa.VimAutomation.HorizonView.`
-2. Import "Omnissa.Hv.Helper" module by running: `Import-Module -Name Omnissa.Hv.Helper`. Alternatively run `Get-Module -ListAvailable 'Omnissa.Hv.Helper' | Import-Module`.
-3. Run `Get-Command -Module 'Omnissa.Hv.Helper'` to list all available functions.
-
-## Prerequisites
-
-1. This module only works for Horizon product E.g. Horizon 7.0.2 and later.
-2. Install the latest version of Powershell, PowerCLI(6.5) or (later version via psgallery).
+2. Import "Omnissa.Horizon.Helper" module by running: `Import-Module -Name Omnissa.Horizon.Helper`. Alternatively run `Get-Module -ListAvailable 'Omnissa.Horizon.Helper' | Import-Module`.
+3. Run `Get-Command -Module 'Omnissa.Horizon.Helper'` to list all available functions.
 
 ## Getting Started with Omnissa Horizon cmdlets
 
@@ -32,7 +25,7 @@ Cmdlets are usually implemented around resource operations. The four basic opera
 1. [`Connect-HVServer`](connect-hvserver/index.md) This cmdlet establishes a connection to the Horizon API service that runs on an instance of the Horizon Connection server.
 2. [`Disconnect-HVServer`](disconnect-hvserver/index.md) This cmdlet closes the connection to one or more Horizon API services that run on one or more instances of Horizon Connection servers.
 
-**Omnissa.Hv.Helper Powershell Module** module provides many additional commandlets which are linked in the menu to the left.
+**Omnissa.Horizon.Helper Powershell Module** module provides many additional commandlets which are linked in the menu to the left.
 
 ## Example Scripts
 
