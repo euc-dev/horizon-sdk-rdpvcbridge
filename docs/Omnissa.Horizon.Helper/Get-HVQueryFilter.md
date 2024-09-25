@@ -3,6 +3,11 @@ external help file: Omnissa.Horizon.Helper-help.xml
 Module Name: Omnissa.Horizon.Helper
 online version:
 schema: 2.0.0
+layout: page
+title: Get-HVQueryFilter
+hide:
+  #- navigation
+  - toc
 ---
 
 # Get-HVQueryFilter
