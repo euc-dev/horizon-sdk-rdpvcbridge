@@ -28,7 +28,11 @@ By installing you agree to the [Omnissa general terms](https://www.omnissa.com/g
 1. Download the horizon powercli zip file.
 2. Open PowerShell on your local machine.
 3. To view the folder paths to which you can extract the PowerCLI ZIP file, run the command: 
-          $env:PSModulePath
+
+    ```Powershell
+    $env:PSModulePath
+    ```
+
 4. Extract the contents of the PowerCLI ZIP file to one of the listed folders. 
 
 
