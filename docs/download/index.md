@@ -6,8 +6,11 @@ hide:
   - toc
 ---
 
-By installing you agree to the [Omnissa general terms](https://www.omnissa.com/general-terms/)
+Omnissa provides this Powershell Module (the “Software”) to you subject to the [Omnissa General Terms](https://www.omnissa.com/general-terms/). By downloading, installing, or using the Software, you agree to be bound by the terms. If you disagree with any of the terms, then do not use the Software.
 
+For additional information, please visit the [Omnissa Legal Center](https://www.omnissa.com/legal-center/).
+
+## Download
 
 | Horizon Server version | Download Powercli module |
 |------------------------------------------------------------------------------------------------------------------------| --- |
@@ -22,9 +25,9 @@ By installing you agree to the [Omnissa general terms](https://www.omnissa.com/g
 
 | OS Type                                      | .Net Version |                                    | Powershell Version |
 |----------------------------------------------|--------------|------------------------------------|---------------------|
-| Windows                                      | .NET Framework 4.7.2 or later <br> .NET Core 3.1|                   |Windows PowerShell 5.1<br>PowerShell 7.x 
-| Linux                                          |.NET Core 3.1 |                                    |PowerShell 7.x        |
-| macOS                                          |.NET Core 3.1 |                                    |PowerShell 7.x        |
+| Windows                                      | .NET Framework 4.7.2 or later <br> .NET Core 3.1|   |Windows PowerShell 5.1<br>PowerShell 7.x |
+| Linux                                        |.NET Core 3.1 |                                    |PowerShell 7.x        |
+| macOS                                        |.NET Core 3.1 |                                    |PowerShell 7.x        |
 
 ## Installation steps
 

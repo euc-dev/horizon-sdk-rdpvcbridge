@@ -1,20 +1,21 @@
 ---
 layout: page
-title: Horizon PowerCLI
+title: Horizon Powershell Module
 hide:
   #- navigation
   - toc
 ---
 
-The Omnissa.VimAutomation.HorizonView powershell module provides Connect/Disconnect cmdlets for View API service.
+The Omnissa Horizon Powershell module (**Omnissa.VimAutomation.HorizonView**) can be used to `Connect` and `Disconnect` to the **View API Service** to assist with automating Horizon activities via Powershell.
 
 The [Omnissa.Horizon.Helper](https://github.com/euc-oss/euc-samples/tree/main/Horizon-Samples/Omnissa.Horizon.Helper) Powershell Module extends the capabilities provided by the `Omnissa.VimAutomation.HorizonView` module. It can Add, create New, Get, Set, Start and Remove Global, Farm and Pool settings.
 
 ## Using Horizon Powercli
 
-1. Import HorizonView module by running: `Import-Module Omnissa.VimAutomation.HorizonView.`
-2. Import "Omnissa.Horizon.Helper" module by running: `Import-Module -Name Omnissa.Horizon.Helper`. Alternatively run `Get-Module -ListAvailable 'Omnissa.Horizon.Helper' | Import-Module`.
-3. Run `Get-Command -Module 'Omnissa.Horizon.Helper'` to list all available functions.
+1. Download the [Omnissa.VimAutomation.HorizonView](https://github.com/euc-dev/horizon-powercli/releases/download/2406/horizon4powercli_2406.zip) module and follow the [installation steps](./download/index.md#installation-steps)
+2. Import HorizonView module by running: `Import-Module Omnissa.VimAutomation.HorizonView.`
+3. Import "Omnissa.Horizon.Helper" module by running: `Import-Module -Name Omnissa.Horizon.Helper`. Alternatively run `Get-Module -ListAvailable 'Omnissa.Horizon.Helper' | Import-Module`.
+4. Run `Get-Command -Module 'Omnissa.Horizon.Helper'` to list all available functions.
 
 ## Getting Started with Omnissa Horizon cmdlets
 
@@ -31,7 +32,7 @@ Cmdlets are usually implemented around resource operations. The four basic opera
 
 ### Example script to connect ViewAPI service
 
-```
+```Powershell
 Import-Module Omnissa.VimAutomation.HorizonView
 
 # Connection to view API service
@@ -44,6 +45,6 @@ $csList = $hvServices.ConnectionServer.ConnectionServer_List()
 
 ### Use advanced functions of this module
 
-```
+```Powershell
 New-HVPool -spec 'path to InstantClone.json file'
 ```
