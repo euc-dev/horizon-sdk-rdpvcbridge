@@ -16,7 +16,7 @@ The target servers are kept in a global variable called `$DefaultHVServers`. The
 
 === "Credential"
 
-    ```Powershell
+    ```powershell
     Connect-HVServer    [-Server]  <String> 
                         -Credential  <PSCredential> 
                         [-Domain  <String>] 
@@ -27,7 +27,7 @@ The target servers are kept in a global variable called `$DefaultHVServers`. The
   
 === "Default"
 
-    ```Powershell
+    ```powershell
     Connect-HVServer    [-Server]  <String>
                         [-Domain  <String>]
                         [-Force]
@@ -39,7 +39,7 @@ The target servers are kept in a global variable called `$DefaultHVServers`. The
 
 === "SessionSecret"
 
-    ```Powershell
+    ```powershell
     Connect-HVServer    [-Server]  <String>
                         -SessionId  <String>
                         [-Force]
@@ -64,7 +64,7 @@ The target servers are kept in a global variable called `$DefaultHVServers`. The
 
 ### Example 1
 
-```Powershell
+```powershell
 Connect-HVServer -Server server -User username -Password pass -Domain domain
 ```
 
@@ -72,7 +72,7 @@ Connects to the Horizon API service that runs on an instance of a Horizon Connec
 
 ### Example 2
 
-```Powershell
+```powershell
 $cs = Connect-HVServer -Server server -Username user -Password pass -Domain domain;
 Connect-HVServer -Server server -SessionId $cs.SessionSecret
 ```
@@ -81,7 +81,7 @@ Connects to the Horizon API service that runs on an instance of a Horizon Connec
 
 ### Example 3
 
-```Powershell
+```powershell
 Connect-HVServer -Server server -User username@domain -Password pass
 ```
 
@@ -89,7 +89,7 @@ Connects to the Horizon API service of a Horizon Connection server by passing th
 
 ### Example 4
 
-```Powershell
+```powershell
 Connect-HVServer -Server server
 ```
 

@@ -5,6 +5,7 @@ hide:
   #- navigation
   - toc
 ---
+![Horizon PowerCLI](../../../assets/logos/powercli-256.png){ align=right }
 
 The Omnissa Horizon Powershell module (**Omnissa.VimAutomation.HorizonView**) can be used to `Connect` and `Disconnect` to the **View API Service** to assist with automating Horizon activities via Powershell.
 
@@ -32,7 +33,7 @@ Cmdlets are usually implemented around resource operations. The four basic opera
 
 ### Example script to connect ViewAPI service
 
-```Powershell
+```powershell
 Import-Module Omnissa.VimAutomation.HorizonView
 
 # Connection to view API service
@@ -45,6 +46,6 @@ $csList = $hvServices.ConnectionServer.ConnectionServer_List()
 
 ### Use advanced functions of this module
 
-```Powershell
+```powershell
 New-HVPool -spec 'path to InstantClone.json file'
 ```

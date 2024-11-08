@@ -16,7 +16,7 @@ If `-Force` is specified, the server is disconnected even if there is more than 
 
 === "Default"
 
-  ```Powershell
+  ```powershell
     Disconnect-HVServer [-Force]
                         [-Server  <ViewServer[]>]
                         [CommonParameters]

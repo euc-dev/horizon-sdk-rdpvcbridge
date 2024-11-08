@@ -23,11 +23,11 @@ For additional information, please visit the [Omnissa Legal Center](https://www.
 
 ## Installation Prerequisites
 
-| OS Type                                      | .Net Version |                                    | Powershell Version |
-|----------------------------------------------|--------------|------------------------------------|---------------------|
-| Windows                                      | .NET Framework 4.7.2 or later <br> .NET Core 3.1|   |Windows PowerShell 5.1<br>PowerShell 7.x |
-| Linux                                        |.NET Core 3.1 |                                    |PowerShell 7.x        |
-| macOS                                        |.NET Core 3.1 |                                    |PowerShell 7.x        |
+| OS Type | .Net Version | Powershell Version |
+|---|---|---|
+| Windows | .NET Framework 4.7.2 or later <br> .NET Core 3.1 | Windows PowerShell 5.1<br>PowerShell 7.x |
+| Linux | .NET Core 3.1 | PowerShell 7.x |
+| macOS | .NET Core 3.1 | PowerShell 7.x |
 
 ## Installation steps
 
@@ -35,7 +35,7 @@ For additional information, please visit the [Omnissa Legal Center](https://www.
 2. Open PowerShell on your local machine.
 3. To view the folder paths to which you can extract the PowerCLI ZIP file, run the command: 
 
-    ```Powershell
+    ```powershell
     $env:PSModulePath
     ```
 
