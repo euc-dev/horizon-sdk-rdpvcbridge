@@ -17,7 +17,7 @@ This function is used to connect to the event database configured on Connection 
 
 ## SYNTAX
 
-```
+```powershell
 Connect-HVEvent [[-DbPassword] <SecureString>] [[-HvServer] <Object>] [[-DbUserName] <String>]
  [<CommonParameters>]
 ```
@@ -31,28 +31,28 @@ To configure event database, goto 'Event Database Configuration' tab in Horizon 
 ## EXAMPLES
 
 ### EXAMPLE 1
-```
+```powershell
 Connect-HVEvent -HvServer $hvServer
 ```
 
 Connecting to the database with default username configured on Connection Server $hvServer.
 
 ### EXAMPLE 2
-```
+```powershell
 $hvDbServer = Connect-HVEvent -HvServer $hvServer -DbUserName 'system'
 ```
 
 Connecting to the database configured on Connection Server $hvServer with customised user name 'system'.
 
 ### EXAMPLE 3
-```
+```powershell
 $hvDbServer = Connect-HVEvent -HvServer $hvServer -DbUserName 'system' -DbPassword 'censored'
 ```
 
 Connecting to the database with customised user name and password.
 
 ### EXAMPLE 4
-```
+```powershell
 $password = Read-Host 'Database Password' -AsSecureString
 ```
 

@@ -17,7 +17,7 @@ Clears configurationof the configured Event Database
 
 ## SYNTAX
 
-```
+```powershell
 Clear-HVEventDatabase [[-HvServer] <Object>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ Clears configurationof the configured Event Database
 ## EXAMPLES
 
 ### EXAMPLE 1
-```
+```powershell
 Clear-HVEventDatabase
 ```
 

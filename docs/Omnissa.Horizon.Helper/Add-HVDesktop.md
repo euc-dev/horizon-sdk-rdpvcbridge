@@ -17,7 +17,7 @@ Adds virtual machine to existing pool
 
 ## SYNTAX
 
-```
+```powershell
 Add-HVDesktop [-PoolName] <String> [-Machines] <String[]> [[-Users] <String[]>] [[-Vcenter] <String>]
  [[-HvServer] <Object>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -30,28 +30,28 @@ This advanced function do basic checks for pool and view API service connection 
 ## EXAMPLES
 
 ### EXAMPLE 1
-```
+```powershell
 Add-HVDesktop -PoolName 'ManualPool' -Machines 'manualPool1', 'manualPool2' -Confirm:$false
 ```
 
 Add managed manual VMs to existing manual pool
 
 ### EXAMPLE 2
-```
+```powershell
 Add-HVDesktop -PoolName 'SpecificNamed' -Machines 'vm-01', 'vm-02' -Users 'user1', 'user2'
 ```
 
 Add virtual machines to automated specific named dedicated pool
 
 ### EXAMPLE 3
-```
+```powershell
 Add-HVDesktop -PoolName 'SpecificNamed' -Machines 'vm-03', 'vm-04'
 ```
 
 Add machines to automated specific named Floating pool
 
 ### EXAMPLE 4
-```
+```powershell
 Add-HVDesktop -PoolName 'Unmanaged' -Machines 'desktop-1.eng.omnissa.com'
 ```
 
@@ -184,6 +184,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 
 ### Tested Against Environment
+
 | | |
 |-|-|
 | Horizon View Server Version |  7.0.2, 7.1.0 |

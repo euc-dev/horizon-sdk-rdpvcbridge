@@ -17,7 +17,7 @@ Add RDS Servers to an existing farm.
 
 ## SYNTAX
 
-```
+```powershell
 Add-HVRDSServer [-FarmName] <Object> [-RdsServers] <String[]> [[-HvServer] <Object>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -31,7 +31,7 @@ This hvServer is bound to specific connection server.
 ## EXAMPLES
 
 ### EXAMPLE 1
-```
+```powershell
 Add-HVRDSServer -Farm "manualFarmTest" -RdsServers "vm-for-rds","vm-for-rds-2" -Confirm:$false
 ```
 
