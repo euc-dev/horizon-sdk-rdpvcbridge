@@ -13,7 +13,7 @@ The [Omnissa.Horizon.Helper](https://github.com/euc-oss/euc-samples/tree/main/Ho
 
 ## Using Horizon Powercli
 
-1. Download the [Omnissa.VimAutomation.HorizonView](https://github.com/euc-dev/horizon-powercli/releases/download/2406/horizon4powercli_2406.zip) module and follow the [installation steps](./download/index.md#installation-steps)
+1. Download the [Omnissa.VimAutomation.HorizonView](https://github.com/euc-dev/horizon-powercli/releases/download/2412/horizon4powercli_2412.zip) module and follow the [installation steps](./download/index.md#installation-steps)
 2. Import HorizonView module by running: `Import-Module Omnissa.VimAutomation.HorizonView.`
 3. Import "Omnissa.Horizon.Helper" module by running: `Import-Module -Name Omnissa.Horizon.Helper`. Alternatively run `Get-Module -ListAvailable 'Omnissa.Horizon.Helper' | Import-Module`.
 4. Run `Get-Command -Module 'Omnissa.Horizon.Helper'` to list all available functions.
